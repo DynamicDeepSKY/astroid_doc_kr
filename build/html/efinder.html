@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eFinder &mdash; Astroid alpha documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=3d6c492d"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ARZoom" href="arzoom.html" />
+    <link rel="prev" title="Web Interface" href="basic.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Astroid
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Quick Start:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">퀵 스타트 가이드</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Web Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">eFinder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sky-recognition">Sky Recognition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#light-pollution">Light Pollution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sky-recognition-with-moon-light-or-light-pollution">Sky Recognition with Moon Light or Light Pollution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#automatic-dso-search-autodso-search">Automatic DSO search </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geolocation-and-time">Geolocation and Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#marker">Marker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#time-adjust">Time Adjust</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#star-finder-search">Star Finder </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ar-mode-ar">AR Mode </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-and-find">Click and Find</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#camera-lock-and-unlock-lock">Camera Lock and Unlock </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#star-list-starlist2">Star List </a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arzoom.html">ARZoom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eaa.html">EAA Stacker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drpole.html">Dr. Pole</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lenscal.html">렌즈 교정</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timelapse.html">타임랩스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collimation.html">Collimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="systemupdate.html">시스템 업데이트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remotesystem.html">원격 시스템 구축하기</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">TroubleShooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">문제 해결</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovery.html">복구 안내</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Known Issues V1.1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Updates:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Updates Log</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Astroid</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">eFinder</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/efinder.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="efinder">
+<span id="id1"></span><h1>eFinder<a class="headerlink" href="#efinder" title="Permalink to this heading"></a></h1>
+<p>하단 아이콘 바의 눈 버튼 <a class="reference internal" href="_images/liveps.png"><img alt="liveps" src="_images/liveps.png" style="width: 19.5px; height: 19.5px;" /></a> 을 클릭하면 Astroid의 작동 모드가 eFinder로 전환되고 실시간 하늘 인식이 활성화됩니다. eFinder를 사용하기 전에 하늘이 인식되었는지 확인하십시오. 하늘이 인식되면 상태 바의 빨간 눈 아이콘 <a class="reference internal" href="_images/eye_red.png"><img alt="eye_red" src="_images/eye_red.png" style="width: 19.2px; height: 19.2px;" /></a> 이 녹색 눈 <a class="reference internal" href="_images/eye_green.png"><img alt="eye_green" src="_images/eye_green.png" style="width: 19.2px; height: 19.2px;" /></a> 으로 바뀝니다.</p>
+<div class="admonition- admonition">
+<p class="admonition-title">중요</p>
+<p>하늘 인식 모드는 제공된 5mm 렌즈에서만 작동한다는 점에 유의하세요. 다른 렌즈를 장착하여 Astroid를 카메라로 사용할 수는 있지만 하늘 인식은 작동하지 않습니다.</p>
+</div>
+<section id="sky-recognition">
+<h2>Sky Recognition<a class="headerlink" href="#sky-recognition" title="Permalink to this heading"></a></h2>
+<p>하늘 인식이 활성화되면 Astroid가 하늘을 인식하려고 시도하지만 경우에 따라 실패할 수 있습니다. 5초 이내에 하늘 인식 상태 아이콘이 녹색으로 바뀌지 않는다면 다음을 시도해 보세요.</p>
+<ul class="simple">
+<li><p>렌즈 초점이 맞는지 확인하세요. 초점이 흐리면 Astroid가 별을 잘 인식하지 못합니다.</p></li>
+<li><p>이미지에 충분한 별이 있는지 확인하세요.</p></li>
+<li><p>게인/노출을 약간 높이거나 낮추어 보세요. 이미지가 너무 밝거나 어둡지 않아야 합니다. 노출을 높이면 반응 속도가 느려집니다.</p></li>
+<li><p>카메라를 구름, 달, 건물이 없는 방향으로 향하게 하세요. 보이는 장애물이 많으면 하늘 인식에 더 많은 시간이 걸립니다. 일단 인식되면 천천히 원하는 방향으로 카메라를 이동합니다.</p></li>
+</ul>
+</section>
+<section id="light-pollution">
+<h2>Light Pollution<a class="headerlink" href="#light-pollution" title="Permalink to this heading"></a></h2>
+<p>하늘 인식 성능에 영향을 미치는 주요 요인 중 하나는 하늘 상태입니다. 최적의 하늘 상태는 달빛이 없는 Bortle 6 이하의 매우 어두운 하늘입니다. Bortle은 야간 하늘의 빛 공해 정도를 추정하는 척도입니다. 다음 사이트에서 해당 위치의 Bortle 단계를 쉽게 확인할 수 있습니다.</p>
+<p><a class="reference external" href="https://www.lightpollutionmap.info/">https://www.lightpollutionmap.info/</a></p>
+<p>다음 예시는 브리즈번 시내 주변의 세 장소에 대한 Bortle 단계를 보여줍니다.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/bortle.png"><img alt="Bortle" src="_images/bortle.png" style="width: 600px;" /></a>
+</figure>
+<p>작동할 수도 있지만 Bortle 6 이상 고도한 빛 공해 지역에서는 하늘 인식 성능을 보장하지 않습니다. Bortle 등급에 대한 자세한 내용은 다음 표를 참조하세요.</p>
+<table class="docutils align-center" id="id2">
+<caption><span class="caption-text">Bortle 등급</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 66.7%" />
+<col style="width: 33.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>하늘 상태</p></th>
+<th class="head"><p>Bortle 등급</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>탁월한 암흑 하늘</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>평균 암흑 하늘</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>시골 하늘</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>시골/교외 전환</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>교외</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>밝은 교외</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>교외/도시 전환</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>도시 하늘</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>도심 하늘</p></td>
+<td><p>9</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sky-recognition-with-moon-light-or-light-pollution">
+<h2>Sky Recognition with Moon Light or Light Pollution<a class="headerlink" href="#sky-recognition-with-moon-light-or-light-pollution" title="Permalink to this heading"></a></h2>
+<p>달빛이나 빛 공해 하에서는 Bortle 6 이하, 달빛 없는 상태에서 사용하는 것이 권장되지만, 그렇지 않은 환경에서도 제한된 속도와 정확도로 eFinder를 작동시키는 방법이 있습니다.</p>
+<p>하늘 인식의 기본 설정은 달빛 없는 Bortle 5에 최적화된 노출 0.3초, 게인 140입니다. 짧은 노출 시간은 반응 속도를 높여주지만 높은 게인 설정이 필요하며, 이는 빛 공해 및 달빛 조건에서 노이즈가 많은 이미지를 초래합니다. 노이즈가 많은 이미지는 하늘 인식 성능을 떨어뜨립니다.</p>
+<p>간단한 해결책은 노출을 늘리고 게인을 낮춰 반응 속도를 타협하는 것입니다. 다음 예시는 노출 및 게인 설정이 달빛 조건에서 노이즈를 줄이는 방법을 보여줍니다.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/light_condition_low_exposure.png"><img alt="Low exposure" src="_images/light_condition_low_exposure.png" style="width: 400px;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/light_condition_max_exposure.png"><img alt="Max exposure" src="_images/light_condition_max_exposure.png" style="width: 400px;" /></a>
+</figure>
+</section>
+<section id="automatic-dso-search-autodso-search">
+<h2>Automatic DSO search <a class="reference internal" href="_images/autodso_search.png"><img alt="autodso_search" src="_images/autodso_search.png" style="width: 26.0px; height: 26.0px;" /></a><a class="headerlink" href="#automatic-dso-search-autodso-search" title="Permalink to this heading"></a></h2>
+<p>자동 DSO 검색은 아무런 준비 없이 자유롭게 하늘을 탐험하고 싶을 때 매우 유용합니다. 이 기능을 활성화하면 현재 주요 망원경 시야에 가장 가까운 DSO를 자동으로 찾아 화면에 모양과 ID를 표시합니다.</p>
+<p>기본적으로 이 기능은 NGC에 있는 천체를 표시하지만 “Astro Tools Menu” -&gt; “Search Setting” 에서 다른 카탈로그를 선택할 수 있습니다. 또한, 접안렌즈의 시야에 따라 너무 작거나 너무 큰 별을 찾고 싶지 않을 수 있습니다. Min 및 Max 크기 옵션을 조정하세요.</p>
+<p>이 옵션을 켠 후 화면에 아무 것도 보이지 않으면, 약간 확대하고 하늘의 다른 부분을 이동해 보세요.</p>
+</section>
+<section id="geolocation-and-time">
+<h2>Geolocation and Time<a class="headerlink" href="#geolocation-and-time" title="Permalink to this heading"></a></h2>
+<p>시스템 시간은 기기의 시간에 따라 자동으로 업데이트되지만, 경도와 위도 정보는 수동으로 입력해야 합니다. 초기 설정은 0으로 되어 있으며, 상단 상태 아이콘 위치에 빨간 GPS 아이콘이 표시됩니다. 예상 하늘을 제대로 그리려면 시간과 GPS 정보가 중요합니다.</p>
+</section>
+<section id="marker">
+<h2>Marker<a class="headerlink" href="#marker" title="Permalink to this heading"></a></h2>
+<p>eFinder 모드를 활성화하면 즉시 이미지에 빨간 표시가 나타납니다. 빨간 원의 중심은 메인 망원경이 보고 있는 지점입니다. 이 기능을 처음 사용할 경우, 이 마커를 이동시켜 망원경의 시야와 정렬시켜야 할 수 있습니다. 자세한 절차는 <a class="reference internal" href="quickstart.html#quickstart"><span class="std std-ref">eFinder Align</span></a> 를 참조하십시오.</p>
+</section>
+<section id="time-adjust">
+<h2>Time Adjust<a class="headerlink" href="#time-adjust" title="Permalink to this heading"></a></h2>
+<p>기본적으로 플래닛라리움은 현재 하늘을 보여줍니다. 하지만 타임 바를 조정하여 과거 및 미래의 하늘을 그릴 수 있습니다. 지원 범위는 현재 시간 기준 -10시간에서 +10시간입니다.</p>
+</section>
+<section id="star-finder-search">
+<h2>Star Finder <a class="reference internal" href="_images/search.png"><img alt="search" src="_images/search.png" style="width: 26.0px; height: 26.0px;" /></a><a class="headerlink" href="#star-finder-search" title="Permalink to this heading"></a></h2>
+<p>Astroid에는 NGC, IC, M, HIP 별 목록이 내장되어 있습니다. Star Finder를 사용하려면 관심 있는 별 객체의 번호를 찾아 검색 창에 입력하십시오. 그러면 해당 별의 사진 및 기타 정보가 표시됩니다.</p>
+<p>Star Finder 목록에서 별을 클릭하면 Astroid가 대상의 위치와 좌/우, 상/하 방향으로 얼마나 회전해야 하는지(도 단위)를 보여줍니다. 이 각도에 따라 마운트를 조정하세요. 현재 EQ 마운트 가이드라인은 지원되지 않지만, 이 기능은 향후 업데이트에서 추가될 예정입니다.</p>
+</section>
+<section id="ar-mode-ar">
+<h2>AR Mode <a class="reference internal" href="_images/AR.png"><img alt="AR" src="_images/AR.png" style="width: 25.6px; height: 25.6px;" /></a><a class="headerlink" href="#ar-mode-ar" title="Permalink to this heading"></a></h2>
+<p>기본적으로 화면을 드래그하면 항상 AzAlt 방향으로 이동합니다. 하지만 때때로 화면 뷰를 고정하고 세계를 움직이는 것이 편리할 때가 있습니다. 이 기능을 사용하려면 설정 메뉴에서 CameraView 옵션을 활성화하십시오.</p>
+</section>
+<section id="click-and-find">
+<h2>Click and Find<a class="headerlink" href="#click-and-find" title="Permalink to this heading"></a></h2>
+<p>Astroid의 가장 독특한 기능 중 하나는 카메라 이미지에서 별과 DSO 정보를 클릭하여 찾을 수 있다는 점입니다. EAA 스태커와 결합하면, 목록에서 별을 선택하는 것보다 더 시각적으로 상호작용하는 방식으로 밤하늘을 탐험할 수 있습니다.</p>
+</section>
+<section id="camera-lock-and-unlock-lock">
+<h2>Camera Lock and Unlock <a class="reference internal" href="_images/lock.png"><img alt="lock" src="_images/lock.png" style="width: 25.6px; height: 25.6px;" /></a><a class="headerlink" href="#camera-lock-and-unlock-lock" title="Permalink to this heading"></a></h2>
+<p>사용자 인터페이스는 기본적으로 카메라 이미지의 중심을 자동으로 따릅니다. 자동 카메라 추적 모드를 해제하려면 왼쪽의 잠금 버튼 <a class="reference internal" href="_images/lock.png"><img alt="lock" src="_images/lock.png" style="width: 25.6px; height: 25.6px;" /></a> 을 클릭하십시오.</p>
+<p>버튼을 한 번 더 클릭하면 잠금 모드로 전환되어 다시 카메라를 따르게 됩니다.</p>
+</section>
+<section id="star-list-starlist2">
+<h2>Star List <a class="reference internal" href="_images/starlist.png"><img alt="starlist2" src="_images/starlist.png" style="width: 25.6px; height: 25.6px;" /></a><a class="headerlink" href="#star-list-starlist2" title="Permalink to this heading"></a></h2>
+<p>Star Finder 창에서 추가 버튼 <a class="reference internal" href="_images/add-list.png"><img alt="add_to_list" src="_images/add-list.png" style="width: 25.6px; height: 25.6px;" /></a> 을 클릭하여 자신만의 별 목록을 만들 수 있습니다.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/searched_star.png"><img alt="Max exposure" src="_images/searched_star.png" style="width: 200px;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/auto_search.png"><img alt="Max exposure" src="_images/auto_search.png" style="width: 400px;" /></a>
+</figure>
+<p>추가된 별들은 Star List 창에서 볼 수 있습니다. Star List 창을 열려면 <a class="reference internal" href="_images/starlist.png"><img alt="starlist" src="_images/starlist.png" style="width: 25.6px; height: 25.6px;" /></a> 를 클릭하십시오.</p>
+<p>또한, <a class="reference internal" href="_images/search_list.png"><img alt="search_list" src="_images/search_list.png" style="width: 25.6px; height: 25.6px;" /></a> 아이콘을 클릭하여 현재 망원경 주변의 DSO를 자동으로 검색해 목록에 추가할 수 있습니다.</p>
+<p><a class="reference internal" href="_images/search_list.png"><img alt="search_list" src="_images/search_list.png" style="width: 25.6px; height: 25.6px;" /></a> 근처의 DSO 검색. 기본적으로 M이 사용되지만, Astro Tools Menu에서 NGC, IC 등으로 변경할 수 있습니다.</p>
+<p>목록을 저장하고 불러오려면 다음 아이콘들을 사용하십시오.</p>
+<p><a class="reference internal" href="_images/save_list.png"><img alt="save_list" src="_images/save_list.png" style="width: 25.6px; height: 25.6px;" /></a> 목록 저장. 목록은 Astroid의 내부 메모리에 저장됩니다.</p>
+<p><a class="reference internal" href="_images/download_list.png"><img alt="download_list" src="_images/download_list.png" style="width: 25.6px; height: 25.6px;" /></a> 목록 불러오기.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="basic.html" class="btn btn-neutral float-left" title="Web Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arzoom.html" class="btn btn-neutral float-right" title="ARZoom" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, DynamicDeepSKY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

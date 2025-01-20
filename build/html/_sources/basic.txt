@@ -1,0 +1,238 @@
+.. _basic:
+
+Web Interface
+========================
+
+Layout
+--------------
+
+.. figure:: /images/screen_component.png
+   :alt: Finder align 
+   :align: center
+
+1. Camera image
+2. Status icons
+3. Current frame number, Field of view, Current time
+4. Quick control icons
+
+Status Icons
+--------------
+
+|bolt_green| Unstable power
+
+|bolt_red| Power normal
+
+|eye_green| Sky recognized
+
+|eye_red| Sky recognition failed
+
+|eject_red| Don't eject USB
+
+|update| System update in progress
+
+|satellite_green| GPS valid
+
+|satellite_red| GPS input required
+
+|save_green| Inave save on
+
+|temp_green| CPU temparature is in normal range 
+
+|temp_red| CPU is overheated
+
+|usbmemory_green| USB recognized
+
+
+.. |bolt_green| image:: /images/bolt_green.png
+                :scale: 50 %
+.. |bolt_red| image:: /images/bolt_red.png
+                :scale: 50 %
+
+.. |eye_green| image:: /images/eye_green.png
+                :scale: 50 %
+.. |eye_red| image:: /images/eye_red.png
+                :scale: 50 %
+
+
+.. |eject_red| image:: /images/eject_red.png
+                :scale: 50 %
+.. |update| image:: /images/update.png
+                :scale: 50 %
+
+
+.. |satellite_green| image:: /images/satellite_green.png
+                :scale: 50 %
+.. |satellite_red| image:: /images/satellite_red.png
+                :scale: 50 %
+
+
+.. |save_green| image:: /images/save_green.png
+                :scale: 50 %
+.. |save_red| image:: /images/save_red.png
+                :scale: 50 %
+
+
+.. |temp_green| image:: /images/temp_green.png
+                :scale: 50 %
+.. |temp_red| image:: /images/temp_red.png
+                :scale: 50 %
+
+
+.. |usbmemory_green| image:: /images/usbmemory_green.png
+                :scale: 50 %
+.. |usbmemory_red| image:: /images/usbmemory_red.png
+                :scale: 50 %
+
+
+
+
+
+Quick control icons
+-------------------------
+
+|liveps| Live sky recognition on/off
+
+|bbtSearch| Star search
+
+|bbtSettings| Setting pannel
+
+|btAzimuthalGrid| Azimuthal grid
+
+|btEclipticGrid| Ecliptic grid
+
+|stack| Image stack
+
+|align| Pole align start
+
+
+.. |bbtSearch| image:: /images/bbtSearch-on.png
+                :scale: 60 %
+
+.. |bbtSettings| image:: /images/bbtSettings-on.png
+                :scale: 60 %
+.. |btAzimuthalGrid| image:: /images/btAzimuthalGrid-on.png
+                :scale: 70 %
+.. |liveps| image:: /images/liveps.png
+                :scale: 10 %
+.. |btEclipticGrid| image:: /images/btEclipticGrid-on.png
+                :scale: 70 %
+.. |stack| image:: /images/stack.png
+                :scale: 10 %
+
+.. |align| image:: /images/align.png
+                :scale: 10 %
+
+
+
+Camera Control
+--------------
+
+
+.. figure:: /images/camera_ctrl.png
+   :alt: Finder align 
+   :align: center
+
+Exposure: Sensor exposure time in second.
+
+Gain: Sensor gain 
+
+ImageQuality: JPG image quality in percentage. Higher value increase file size and image quality but slower the frame transfer rate.
+
+FlipImage: This option will flip image which might be useful in some mounting conditions.
+
+ZoomMode: Turning this optin will force Astroid to send down sized image in faster frame transfere rate. This option is usuful when focusing.
+
+
+ZoomSize: Image size in pixel.
+
+
+
+2D Mode 
+------------------
+
+
+
+3D Mode 
+------------------
+
+
+
+Setting Up License
+-----------------------
+
+.. admonition:: Information
+
+    You need to activate a license key only in two cases: 1. when you ordered a new app license code. 2. when you ordered a diy kit
+
+1. Once you receve the license key by email copy the key and paste it in the setting menu and press set license button.
+2. Refresh the screen with F5 key and check the system info menu to see if your license is recognized correctly 
+
+.. figure:: /images/systeminfo.png
+   :alt: Version check
+   :align: center
+
+.. figure:: /images/license_check.png
+   :alt: Finder align 
+   :align: center
+
+
+Hot Pixel Correction
+--------------------
+
+The number of hot pixel naturally increses over time. These hot pixels are especially noticeable if you run EAA stacker with tracking option on. Astroid has a built-in hot pixel dector and corrector. But to correct the hot pixel you need to manually activate the hot pixel dector. Please follow the following procedure to detect the hot pixels. 
+
+1. Complete block the lens port of Astroid. Turn off every light around the room and make it completely dar. The DDS made lens cover will be available soon.
+2. To go camera setting and increase exposure to maximum and set gain to 150.
+3. Go to system menu and adjust hot pixel level. Lower value will pick more hot pixels. Try with the default value and if you still see some week hot pixels, lower the value little bit more until satisfactory.
+4. Click hot pixel correction button.
+5. Run EAA stacker and see if hot pixels are disappeared
+
+
+
+Changing WIFI SSID and Pass
+---------------------------
+
+* Using this option is currently not recommanded due to a bug. Don't use this option until there is further notice.
+ 
+The default Wifi SSID is DDS_DIRECT but you can change it what ever you want. Just go to the system setup and type SSID and Pass you want and press set button.
+
+
+
+
+.. admonition:: Warnning
+
+    If you cut the power without parking Astroid, sometime SD card is currped and you have to recover it to factory setup.
+
+
+Writing Images to USB Memory
+------------------------------
+
+1. Format a usb memory with NTFS format
+2. Change name to DDS
+3. Insert the usb to Astroid and see if USB buttons are recognized
+4. Click the save button
+
+
+
+.. admonition:: Warnning
+
+    Use high speed USB memorys only. With low speed usb, Astroid will continue to write files to USB even after you finished recording which will drastically increases the chance of file curruption.
+
+.. admonition:: How to eject
+
+    USB must be ejected after eject button is clicked and all the usb related icons are disappeared. Otherwise, the USB will be currupted and you will lost all data in the USB.
+    
+
+Making DDS USB
+------------------------------
+
+1. Prepare a SanDisk 32GB Ultra Fit or equivalant. High speed USB memory is highly recommanded to prevent any data lost
+2. Format the disk with NTFS format and change name to DDS. 
+3. Insert the USB to Astroid and see if USB icon appears on the top.
+
+
+Changing Web Address
+--------------------
+
+If you have to run multiple Astroid camera under a same network you should change it's host ID. Log in to Astroid using SSH and change host name in raspi-config.
+

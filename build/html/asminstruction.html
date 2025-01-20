@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assembly Instruction &mdash; Astroid alpha documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=3d6c492d"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Astroid
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Quick Start:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">퀵 스타트 가이드</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Web Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="efinder.html">eFinder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arzoom.html">ARZoom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eaa.html">EAA Stacker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drpole.html">Dr. Pole</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lenscal.html">렌즈 교정</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timelapse.html">타임랩스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collimation.html">Collimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="systemupdate.html">시스템 업데이트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remotesystem.html">원격 시스템 구축하기</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">TroubleShooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">문제 해결</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovery.html">복구 안내</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Known Issues V1.1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Updates:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Updates Log</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Astroid</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Assembly Instruction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/asminstruction.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="assembly-instruction">
+<span id="asminstruction"></span><h1>Assembly Instruction<a class="headerlink" href="#assembly-instruction" title="Permalink to this heading"></a></h1>
+<section id="assembly-instruction-for-diy-kit">
+<h2>Assembly Instruction for DIY kit<a class="headerlink" href="#assembly-instruction-for-diy-kit" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Unscrew top four M2.5 bolts</p></li>
+<li><p>Spread enclosed thermal grease to the cpu and ram pads. Spread it to be around 0.3mm thickness.</p></li>
+<li><p>Place your RPI to the camera side case. Side connectors should be fitted to the position first.</p></li>
+<li><p>Lift camera connector holder on RPi and insert the camera cable into it. Than lock the connector holder by gently pushing it. If the cable is short, pull it very carefully so that the FPC is not damaged.</p></li>
+<li><p>Place the cover case to the RPi4 and press slightly.</p></li>
+<li><p>Open the top cover again and see if the thermal grease is properly spreaded on the CPU and RAM.</p></li>
+</ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/thermalpad_check.jpg"><img alt="Thermal pad check" src="_images/thermalpad_check.jpg" style="width: 403px; height: 302px;" /></a>
+<figcaption>
+<p><span class="caption-text">Failure case. The thermal grease was not enough on the ram pad.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Close both cover and tightnen four M2.5 bolts. Don’t tighten it too much as cover will be clamping the RPi board.</p></li>
+</ol>
+<div class="admonition-important admonition">
+<p class="admonition-title">Important</p>
+<p>You must use ESD removing tools such as ESD Grounding Wrist Strap. The camera module is not ESD protected. It is very easy to damage the camera board if you do not handle ESD properly. DynamicDeepSKY is not responsorble for any damage caused by ESD. Every DIY kits are tested before shipped. If the camera does not work or sending a broken images, you have to purchase the camera PCB board again.</p>
+</div>
+<p>See the assembly video tutorial for more detailed instruction of above: <a class="reference external" href="https://youtu.be/C3kBiqK5P64">https://youtu.be/C3kBiqK5P64</a></p>
+<p>It is highly recommanded to watch the video before you start.</p>
+<p>Once assembled, connect Astroid to a USB power source with 5V 3A capacity and see if it boots up normally.</p>
+</section>
+<section id="setting-up-your-license-and-serial">
+<h2>Setting Up Your License and Serial<a class="headerlink" href="#setting-up-your-license-and-serial" title="Permalink to this heading"></a></h2>
+<p>Once you confirmed Astroid is normaly working, you need to put your license and serial. Your serial number on the left side of Astroid.</p>
+<p>License setting</p>
+<ol class="arabic simple">
+<li><p>Download your system ID by clicking GetSysID button under System Setting menu</p></li>
+<li><p>Send it to us and we will send your license code back to you. We will normally get back to you within 12 hours.</p></li>
+<li><p>Once you got your license key, copy and past the code to the LicenseCode under System Setting menu and click AddLicense button. If you have multiple license keys repeat this multiple time.</p></li>
+<li><p>Refresh the screen by hitting F5 and open the system information window to see if the license is activated. Check ShowInfo box under System Setting menu to open up system information window. Any app name should appear on the Licenses if it was correctly added.</p></li>
+</ol>
+<p>Serial setting</p>
+<ol class="arabic simple">
+<li><p>Check your serial number from the side sticker and type astroid.local/setserial/YOUR_SERIALNUMBER on your web browser</p></li>
+<li><p>Refrash the screen on your web browser and check if the serial number is correct.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, DynamicDeepSKY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

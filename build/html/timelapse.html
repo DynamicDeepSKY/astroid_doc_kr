@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>타임랩스 &mdash; Astroid alpha documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=3d6c492d"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Collimation" href="collimation.html" />
+    <link rel="prev" title="렌즈 교정" href="lenscal.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Astroid
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Quick Start:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">퀵 스타트 가이드</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Web Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="efinder.html">eFinder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arzoom.html">ARZoom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eaa.html">EAA Stacker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drpole.html">Dr. Pole</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lenscal.html">렌즈 교정</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">타임랩스</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#efinder">eFinder 녹화</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eaa">EAA 이미지 녹화</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="collimation.html">Collimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="systemupdate.html">시스템 업데이트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remotesystem.html">원격 시스템 구축하기</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">TroubleShooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">문제 해결</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovery.html">복구 안내</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Known Issues V1.1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Updates:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Updates Log</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Astroid</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">타임랩스</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/timelapse.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="timelapse">
+<span id="id1"></span><h1>타임랩스<a class="headerlink" href="#timelapse" title="Permalink to this heading"></a></h1>
+<p>이 기능을 사용하여 카메라 이미지를 기록해 타임랩스를 만들 수 있습니다. 시스템에 DDS USB를 삽입하고 타임랩스 아이콘 <a class="reference internal" href="_images/timelapse.png"><img alt="timelapse_small" src="_images/timelapse.png" style="width: 26.0px; height: 26.0px;" /></a> 을 눌러 녹화를 시작합니다. 이 기능은 두 가지 방식으로 사용할 수 있습니다.</p>
+<ol class="arabic simple">
+<li><p>밤하늘 탐험 기록</p></li>
+<li><p>메인 망원경의 EAA 이미지 기록</p></li>
+</ol>
+<section id="efinder">
+<h2>eFinder 녹화<a class="headerlink" href="#efinder" title="Permalink to this heading"></a></h2>
+<p>Astroid를 하늘 네비게이터로 사용할 때, 하늘 인식 결과, ARZoom 뷰, RA/DEC, 시간 등 추가 정보와 함께 카메라 이미지 스트림을 녹화할 수 있습니다. 이 기능을 사용하려면 eFinder 모드에서 녹화를 시작해야 합니다.</p>
+<p>스태커를 켜거나 이미지 스태커 설정을 조정하면, 이미지 처리 후 최종 결과가 저장됩니다. 이를 통해 은하수와 함께 밤하늘 타임랩스를 쉽게 녹화할 수 있습니다.</p>
+</section>
+<section id="eaa">
+<h2>EAA 이미지 녹화<a class="headerlink" href="#eaa" title="Permalink to this heading"></a></h2>
+<p>이 모드는 EAA 결과를 기록하고자 할 때 유용합니다. 녹화를 시작하기 전에 타임랩스 설정 메뉴에서 이미지 저장 형식을 TIFF 또는 PNG로 변경했는지 확인하십시오. 기본 설정은 “주석 저장(Save Annotated)”입니다.</p>
+<figure class="align-center">
+<img alt="Finder align" src="_images/menu_timelapse.png" />
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="lenscal.html" class="btn btn-neutral float-left" title="렌즈 교정" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="collimation.html" class="btn btn-neutral float-right" title="Collimation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, DynamicDeepSKY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

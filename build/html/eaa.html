@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EAA Stacker &mdash; Astroid alpha documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=3d6c492d"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dr. Pole" href="drpole.html" />
+    <link rel="prev" title="ARZoom" href="arzoom.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Astroid
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Quick Start:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">퀵 스타트 가이드</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Web Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="efinder.html">eFinder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arzoom.html">ARZoom</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EAA Stacker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-image-stacking">What is Image Stacking?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exposure-time-and-gain">Exposure Time and Gain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-example">Installation Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stack-mode">Stack Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mean-substraction">Mean Substraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tone-curve">Tone Curve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stacking-number">Stacking Number</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="drpole.html">Dr. Pole</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lenscal.html">렌즈 교정</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timelapse.html">타임랩스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collimation.html">Collimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="systemupdate.html">시스템 업데이트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remotesystem.html">원격 시스템 구축하기</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">TroubleShooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">문제 해결</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovery.html">복구 안내</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Known Issues V1.1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Updates:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Updates Log</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Astroid</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">EAA Stacker</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/eaa.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="eaa-stacker">
+<span id="eaa"></span><h1>EAA Stacker<a class="headerlink" href="#eaa-stacker" title="Permalink to this heading"></a></h1>
+<p>EAA 스태커는 기존 망원경이나 기본 하늘 인식 렌즈(5mm)를 사용하여 딥 스카이 오브젝트의 시각화를 쉽게 할 수 있도록 이미지 스태킹을 도와줍니다.</p>
+<section id="what-is-image-stacking">
+<h2>What is Image Stacking?<a class="headerlink" href="#what-is-image-stacking" title="Permalink to this heading"></a></h2>
+<p>이미지 센서로부터 얻은 원본 이미지는 보통 상당히 노이즈가 많습니다. 이러한 노이즈를 처리하는 가장 간단한 방법 중 하나는 여러 장의 이미지를 촬영하여 평균 이미지를 만드는 것입니다. EAA 스태커는 이미지 스태킹을 위한 여러 유용한 도구를 지원합니다.</p>
+</section>
+<section id="exposure-time-and-gain">
+<h2>Exposure Time and Gain<a class="headerlink" href="#exposure-time-and-gain" title="Permalink to this heading"></a></h2>
+<p>노출 시간과 게인은 취향에 따라 조정할 수 있습니다. 짧은 노출 시간은 EAA 스태커가 마운트 움직임에 더 빠르게 반응하도록 하며, 긴 초점 거리 렌즈 사용 시 덜 흐릿한 이미지를 생성합니다. 긴 노출은 이미지 노이즈를 줄일 수 있지만 수동 및 알타지움 마운트에서는 원치 않는 별 궤적을 유발할 수 있습니다.</p>
+<p>게인을 더 높게 조정하면 성운과 같은 희미한 신호가 증폭되어 더 잘 보이게 되지만, 이미지의 노이즈도 증가합니다. 게인은 160 이하로 설정하는 것이 권장됩니다. 높은 게인 값으로 인해 노이즈가 너무 많아진 경우, 스태킹할 이미지 수를 늘리면 전체 노이즈 수준을 낮출 수 있습니다.</p>
+</section>
+<section id="installation-example">
+<h2>Installation Example<a class="headerlink" href="#installation-example" title="Permalink to this heading"></a></h2>
+<p>Astroid에는 50.0mm 카메라 튜브와 가장 일반적인 연결 표준과 연결할 수 있는 1.25인치 암나사가 함께 제공됩니다. 다음 예시는 Astroid를 망원경 렌즈에 장착하기 위해 이 두 가지를 사용하는 방법을 보여줍니다.</p>
+<p>Astroid를 사용하려면 5mm 렌즈를 제거해야 합니다. 왼쪽 그림은 Astroid와 함께 사용할 수 있는 표준 망원경 어댑터와 렌즈를 보여줍니다.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/adaptors.jpg"><img alt="Adaptors" src="_images/adaptors.jpg" style="width: 400px;" /></a>
+</figure>
+<p>망원경에 1.25인치 접안렌즈 마운트만 있는 경우, Astroid를 망원경에 장착할 수 있도록 1.25인치 수-암 어댑터를 사용하십시오. 다음은 Celestron의 1.25인치 어댑터를 사용한 예제 구성입니다.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/125_inch_adaptor.jpg"><img alt="1.25inch" src="_images/125_inch_adaptor.jpg" style="width: 400px;" /></a>
+</figure>
+<p>망원경에 2인치 어댑터가 있는 경우 별도로 1.25인치 튜브를 구입할 필요 없이 2인치 어댑터에 Astroid를 직접 삽입할 수 있습니다.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/2_inch_adaptor.jpg"><img alt="2inch" src="_images/2_inch_adaptor.jpg" style="width: 400px;" /></a>
+</figure>
+<p>Samyang(Rokinon) 85mm F1.4 또는 135mm F2.0 렌즈와 같은 밝은 DSLR 렌즈도 Astroid와 훌륭한 결과를 만듭니다. Sony E-Mount 렌즈와 같은 미러리스 렌즈는 초점 거리 때문에 Astroid에 적합하지 않습니다. Canon EF 마운트 렌즈를 강력히 권장합니다.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/Sony_emount.jpg"><img alt="dslr" src="_images/Sony_emount.jpg" style="width: 400px;" /></a>
+</figure>
+</section>
+<section id="stack-mode">
+<h2>Stack Mode<a class="headerlink" href="#stack-mode" title="Permalink to this heading"></a></h2>
+<p>EAA 스태커는 추적 유무에 따른 두 가지 스택 모드를 지원합니다. 추적 모드는 라이브 스택 모드가 켜졌을 때 캡처된 첫 번째 이미지에 입력 이미지를 자동으로 정렬합니다. 이 모드는 수동 마운트와 알타지움 마운트에서 특히 유용하며, 결과가 정적인 뷰처럼 보이게 합니다. 렌즈가 어둡고 EAA 스태커가 추적할 별을 찾지 못할 때는 추적 모드를 끄는 것이 필요합니다. 예를 들어, F5 이상의 렌즈는 이미지에 추적할 수 있는 별이 부족하여 추적 재설정을 자주 유발할 수 있습니다. 추적을 위해 별이 충분히 보이도록 게인을 조정할 수 있습니다. 추적 모드를 끄면 EAA 스태커가 정렬 없이 단순히 이미지를 평균화합니다. 추적 옵션을 끈 경우, 반드시 마운트의 물리적 추적 옵션을 켜야 합니다.</p>
+</section>
+<section id="mean-substraction">
+<h2>Mean Substraction<a class="headerlink" href="#mean-substraction" title="Permalink to this heading"></a></h2>
+<p>스택된 이미지가 너무 밝다면 이 옵션을 확인하십시오. 이 옵션은 스택된 이미지의 평균 RGB 값을 추정하여 빼줍니다. 빛 공해가 있는 하늘 아래에서 EAA 스태커를 사용할 경우 이 옵션을 사용하십시오.</p>
+</section>
+<section id="tone-curve">
+<h2>Tone Curve<a class="headerlink" href="#tone-curve" title="Permalink to this heading"></a></h2>
+<p>EAA 스태커는 원본 이미지에 극적인 변화를 쉽게 줄 수 있는 기본적인 톤 커브 인터페이스를 제공합니다. 제어 패널에서 ToneCurve 옵션을 체크하여 톤 커브를 표시하고, 여러 제어점을 추가해 곡선을 조정합니다. 일반적으로 낮은 신호를 증폭하려면 커브가 낮은 쪽에서 급격히 증가하고 높은 쪽에서는 서서히 증가해야 합니다. 다음 이미지를 참고하십시오.</p>
+<figure class="align-center">
+<img alt="Tone Curve" src="_images/tonecurve.png" />
+</figure>
+<p>이러한 톤 커브를 만들려면 곡선 라인을 클릭하여 두 개의 제어점을 추가해야 합니다. ToneCurve 적용 옵션을 체크하여 톤 커브를 적용하십시오.</p>
+</section>
+<section id="stacking-number">
+<h2>Stacking Number<a class="headerlink" href="#stacking-number" title="Permalink to this heading"></a></h2>
+<p>스태킹할 이미지의 수는 이 옵션을 통해 조정할 수 있습니다. 스태킹 숫자 4, 8, 16은 버퍼의 모든 이미지를 더한 후 각각의 스태킹 숫자로 나누며, 32, 64는 어두운 렌즈에 대해 나누지 않고 더합니다.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arzoom.html" class="btn btn-neutral float-left" title="ARZoom" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="drpole.html" class="btn btn-neutral float-right" title="Dr. Pole" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, DynamicDeepSKY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
