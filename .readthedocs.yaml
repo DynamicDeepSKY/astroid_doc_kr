@@ -13,7 +13,7 @@ build:
     python: "3.12"
   commands:
     - pip install sphinx sphinx_rtd_theme
-    - sphinx-build -T -b html -d _build/doctrees -D language=ko . $READTHEDOCS_OUTPUT/html
+    - sphinx-build -T -b html -d _build/doctrees -D language=ko docs $READTHEDOCS_OUTPUT/html
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
